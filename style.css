@@ -1,0 +1,125 @@
+.main {
+  margin-top: 10%;
+  padding: 0px;
+}
+/* 로그인 */
+.loginForm {
+  margin-left: 20%;
+}
+.loginForm * {
+  padding: 10px;
+}
+
+.mainTitle {
+  margin-top: 20%;
+  padding-left: 0px;
+}
+.mainbody::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../backgrond.jpg");
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  z-index: -1;
+  content: "";
+}
+.bg {
+  background-color: rgba(0, 0, 0, 0.5); /*살짝 투명한 검정으로 배경색*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
+}
+/* 헤더바 */
+.header {
+  margin: 1% 2% 2% 2%;
+  display: flex;
+  justify-content: space-between;
+}
+#headerBar .search {
+  transform: scale(1.3);
+}
+.infoBtn,
+.homeBtn,
+.logoutBtn,
+.searchBtn {
+  transform: scale(1.2);
+  margin-right: 20px;
+}
+#search {
+  border-radius: 8px;
+  width: 300px;
+}
+
+/* 데쉬보드 */
+.dashboard {
+  margin: 1% 2% 2% 2%;
+}
+
+/* 내 정보 */
+.profile {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#profile {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  radius: 15%;
+  border-radius: 50%;
+}
+
+.img {
+  position: relative;
+  display: inline;
+  margin: 10px;
+}
+img {
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(50, 50, 930, 0.11), 0 1px 3px rgba(1, 0, 0, 1);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+img:focus,
+img:hover {
+  transform: scale(1.05);
+  color: #262626;
+}
+.delete {
+  display: inline;
+  position: absolute;
+  right: 7%;
+  bottom: 20%;
+  width: 18px;
+  transform: scale(2);
+}
+.x {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#upload {
+  display: inline-block;
+  justify-content: center;
+}
+.text-box {
+  margin-bottom: 30px;
+}
+#upload label {
+  width: 70px;
+  margin: auto;
+}
+
+/* 코멘트 */
+#commentForm {
+  margin: 2% 5% 3% 5%;
+}
